@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ken's Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Ken's Calculator</h1>
+    <h3>Please enter your numbers in the boxes </h3>
+
+
+    <div id="calc">
+        <p>
+            <label for="num1">Enter Your First Number:</label>
+            <input type="text" name="txtNum1" id="txtNum1" size="5" />
+        </p>
+
+        <p>
+            <label for="num1">Enter Your Second Number:</label>
+            <input type="text" name="txtNum2" id="txtNum2" size="5" />
+        </p>
+
+        <input type="button" name="add" id="add" value="Add" onclick="addNum();" />
+        <input type="button" name="add" id="add" value="Subtract" onclick="subtractNum();" />
+        <input type="button" name="add" id="add" value="Multiply" onclick="multiplyNum();" />
+        <input type="button" name="add" id="add" value="Divide" onclick="divideNum();" />
+        <input type="button" name="reset" id="reset" value="Start Over" onclick="startOver();" />
+
+        <p><strong>Your answer is:</strong> <label for="TBanswer" id="answer"><input type="text" name="TBanswer" id="TBanswer" readonly /></label></p>
+    </div>
+
+        <div id="ShowResults"></div>
+
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
